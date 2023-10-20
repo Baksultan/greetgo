@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: greetgo_db
+    environment:
+      POSTGRES_DB: debug
+      POSTGRES_USER: debug
+      POSTGRES_PASSWORD: debug
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: debug
+      MONGO_INITDB_ROOT_PASSWORD: debug
+
+
+volumes:
+  mongo_data: {}
+  postgres_data:
+
+networks:
+  default:
+    name: mongodb_network
