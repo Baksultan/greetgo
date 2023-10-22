@@ -4,4 +4,3 @@ VALUES (2002, current_timestamp, 'Baksultan Amangeldi', '111-111-1111', '222-222
        (1995, current_timestamp, 'Aizhan Berik', '555-555-5555', '666-666-6666'),
        (1980, current_timestamp, 'Aidana Ramazan', '777-777-7777', '888-888-8888'),
        (2000, current_timestamp, 'Kairat Nurtas', '999-999-9999', '000-000-0000');
-
