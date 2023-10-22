@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "22b30899-5e53-46e2-b971-b651500f0613",
+		"name": "Greetgo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20818877"
+	},
+	"item": [
+		{
+			"name": "SQL",
+			"item": [
+				{
+					"name": "Get Customers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"limit\": 10,\r\n    \"offset\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:9000/api/v1/getCustomers"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:9000/api/v1/getCustomerById/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer By Phone",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:9000/api/v1/getCustomerByPhoneNumber/666-666-6666"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer By Phone",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\": \"Aiidana Ramazan\",\r\n    \"birthYear\": 1982,\r\n    \"phoneNumber\": \"777-777-7770\",\r\n    \"secondPhoneNumber\": \"888-888-8880\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:9000/api/v1/updateCustomerByPhoneNum/777-777-7777"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\": \"Nurtas Kairat\",\r\n    \"birthYear\": 1999,\r\n    \"phoneNumber\": \"999-999-9990\",\r\n    \"secondPhoneNumber\": \"000-000-0001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:9000/api/v1/updateCustomerById/5"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:9000/api/v1/deleteCustomerById/5"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer By Phone",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:9000/api/v1/deleteCustomerByPhoneNumber/555-555-5555"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "NoSQL",
+			"item": [
+				{
+					"name": "Get Customers Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"limit\": 10,\r\n    \"offset\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:9000/api/v2/getCustomers"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer By Id Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:9000/api/v2/getCustomerById/653280434e8dbd0897b53fc4"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer By Phone Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:9000/api/v2/getCustomerByPhoneNumber/666-666-6666"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer By Phone Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\": \"Алексей Козлов\",\r\n    \"birthYear\": 1998,\r\n    \"phoneNumber\": \"777-777-7770\",\r\n    \"secondPhoneNumber\": \"888-888-8880\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:9000/api/v2/updateCustomerByPhoneNum/777-777-7777"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer By Id Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\": \"Olga Sokolova\",\r\n    \"birthYear\": 2005,\r\n    \"phoneNumber\": \"999-999-9990\",\r\n    \"secondPhoneNumber\": \"000-000-0001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:9000/api/v2/updateCustomerById/653280434e8dbd0897b53fc8"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer By Id Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:9000/api/v2/deleteCustomerById/653280434e8dbd0897b53fc8"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer By Phone Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:9000/api/v2/deleteCustomerByPhoneNumber/333-333-3333"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
